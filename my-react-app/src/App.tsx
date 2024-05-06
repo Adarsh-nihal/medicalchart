@@ -1,38 +1,13 @@
 // App.tsx
-import React, { useEffect } from 'react';
 import './App.css';
-import initSciChart from './Chart';
-import HeartbeatGraph from './assets/HeartbeatGraph';
-
+import MainChart from './component/MainChart';
 function App() {
-  useEffect(() => {
-    const initializeChart = async () => {
-      try {
-        const sciChartSurface = await initSciChart();
-        // Optionally, you can store sciChartSurface in state if needed
-      } catch (error) {
-        console.error("Error initializing SciChart:", error);
-      }
-    };
-    
-    initializeChart();
-
-    return () => {
-      // Cleanup function
-    };
-  }, []);
+  
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>SciChart.js with React hello world!</h1>
-        <p>
-          In this example we setup webpack, scichart, react and create a simple
-          chart with one X and Y axis
-        </p>
-      </header>
-      <HeartbeatGraph/>
-      <div id="scichart-root" style={{ maxWidth: 900, height: "500px" }}></div>
+    <div className="min-h-[100vh] flex gap-5  flex-col pt-20 items-center">
+      <p className='font-bold text-3xl mb-10'>Allied Medical</p>
+    <MainChart/>
     </div>
   );
 }
