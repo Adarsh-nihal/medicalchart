@@ -9,6 +9,8 @@ const CopyChart = () => {
     const sampleECGData = Array.from({ length: 100 }, () => Math.floor(Math.random() * 101));
     
 
+    
+
     function generateECGData() {
       const data = [];
       let x = 0;
