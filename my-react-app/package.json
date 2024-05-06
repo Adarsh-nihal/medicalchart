@@ -15,11 +15,7 @@
     "echarts": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-vis": "^1.12.1",
-    "rxjs": "^7.8.1",
-    "scichart": "^3.3.586",
-    "scichart-angular": "^0.0.2",
-    "scichart-react": "^0.1.8"
+    "react-vis": "^1.12.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
